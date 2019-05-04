@@ -4,7 +4,7 @@
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="form-group">
-  <%= f.text_field :name, placeholder: "Your Name", class: "form-control" %>
+  <%= f.text_field :name, placeholder: "Your Name", autofocus: true, class: "form-control" %>
   </div>
 
   <div class="form-group">
@@ -26,7 +26,7 @@
 
   <div class="form-group">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control" %>
+    <%= f.email_field :email,  autocomplete: "email", class: "form-control" %>
   </div>
 
   <div class="form-group">
